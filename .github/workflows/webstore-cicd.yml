@@ -3,7 +3,9 @@
 name: webstore-cicd
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 env:
   AZURE_WEBAPP_NAME: 'web1-app-ForPipeline'
